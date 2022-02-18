@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby on Rails</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        .sidebar a.active {
+            background-color: blue;
+            color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {
+                float: left;
+            }
+            div.content {
+                margin-left: 0;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="/index.html">Home</a>
+        <a class="active" href="/Ruby on Rails.html">Ruby on Rails</a>
+    </div>
+
+    <div class="content">
+        <h2 class="mb-4">Ruby on Rails</h2>
+        <img src="/images/Ruby_On_Rails_Logo.png" alt="Ruby on Rails" width="50%">
+        <p>Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages
+            and facilitates the use of web standards such as JSON or XML for data transfer and HTML, CSS and JavaScript for user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms,
+            including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern. (From Wikipedia)</p>
+        <h3>With Laravel's foundation, it is not difficult to learn ruby on rails.</h3>
+
+        <h3>Let our start the learning</h3>
+
+        <h1>#installation</h1>
+        <p><a href="https://rubyinstaller.org/downloads/">Click There</a> to install the Ruby. Not Need to follow the Picture. Just look at the most special one and you can install it.</p>
+        <h4>Note: Make sure that the application is installed on the correct System Path.</h4>
+        <a href="/images/125811.png" target="_blank"><img src="/images/125811.png" alt="" width="20%"></a>
+        <p>After install the exe application, Open your cmd and typing <b>gem imstall rails</b>. Give him some time to install. Make sure correct the Internal.</p>
+        <img src="/images/gem_install.jpg" alt="gem_install">
+        <p>After installation finish, type <b>rails -v</b> then it will show the ruby version.</p>
+        <p>Update the ruby version, type <b>gem update rails</b></p>
+        <img src="/images/gem_update.png" alt="gem_update">
+
+        <h3>#Installation Verification</h3>
+        <p>You can Verification the installation is success or not.</p>
+        <p>Create a new Porject. Type <b>rails new demo</b></p>
+        <p>Go to the file PATH. Type <b>cd demo</b></p>
+        <p>Start the Server. Type <b>rails server</b></p>
+        <p>Now you can open your browser and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></p>
+        <a href="/images/132104.png" target="_blank"><img src="/images/132104.png" width="50%"></a>
+        <br><br><br>
+    </div>
+
+</body>
+
+</html>
